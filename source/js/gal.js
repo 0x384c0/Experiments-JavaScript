@@ -2,9 +2,10 @@
 var
     imageIdPlaceholder = "<image_id>";
     imageUrlMasks = {
-    "Namba"     : "http://d2.files.namba.kg/files/" + imageIdPlaceholder,
-    "4chanGif"  : "http://s.4cdn.org/image/title/" + imageIdPlaceholder + ".gif",
-    "4chanPng"  : "http://s.4cdn.org/image/title/" + imageIdPlaceholder + ".png"
+        "Namba"     : "http://d2.files.namba.kg/files/" + imageIdPlaceholder,
+        "4chanGif"  : "http://s.4cdn.org/image/title/" + imageIdPlaceholder + ".gif",
+        "4chanPng"  : "http://s.4cdn.org/image/title/" + imageIdPlaceholder + ".png",
+        "4chanJpg"  : "http://s.4cdn.org/image/title/" + imageIdPlaceholder + ".jpg"
 };
 //UI elements
 var picOnPageInput,
