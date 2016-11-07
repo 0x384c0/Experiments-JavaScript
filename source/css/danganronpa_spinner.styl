@@ -1,0 +1,48 @@
+.bg-holder
+  -webkit-transform-style preserve-3d
+  transform-style preserve-3d
+  position absolute
+  top -261px
+  left 50%
+  margin-left -730px
+  -webkit-transition 470ms all
+  transition 470ms all
+  -webkit-transform scale(0.8) translate3d(0, 0, 1000px)
+  transform scale(0.8) translate3d(0, 0, 1000px)
+  -webkit-transform-origin 30% 60%
+  transform-origin 30% 60%
+  -webkit-transition-delay 180ms
+  transition-delay 180ms
+  opacity 0
+  z-index -1
+  &.anime
+    opacity 1
+    -webkit-transform scale(1) translate3d(0, 0, 1000px)
+    transform scale(1) translate3d(0, 0, 1000px)
+
+.holder-inner
+  -webkit-transform perspective(973px) rotateX(45deg) rotateY(27deg) rotateZ(-4deg) scale(1)
+  transform perspective(973px) rotateX(45deg) rotateY(27deg) rotateZ(-4deg) scale(1)
+  -webkit-transform-origin 10%
+  transform-origin 10%
+  img
+    &.rotate
+      -webkit-animation title_anime 80000ms linear infinite
+      animation title_anime 80000ms linear infinite
+
+$keyframe-name = title_anime
+@keyframes {$keyframe-name}
+  0%
+    -webkit-transform rotateZ(0deg)
+    transform rotateZ(0deg)
+  100%
+    -webkit-transform rotateZ(360deg)
+    transform rotateZ(360deg)
+
+@-webkit-keyframes {$keyframe-name}
+  0%
+    -webkit-transform rotateZ(0deg)
+    transform rotateZ(0deg)
+  100%
+    -webkit-transform rotateZ(360deg)
+    transform rotateZ(360deg)

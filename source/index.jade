@@ -8,7 +8,11 @@ html
         script(src='js/explanded_image/wakaba.js')
         script(src='js/explanded_image/loader.js')
         link(rel='stylesheet', type='text/css', href='css/style.css')
+        link(rel='stylesheet', type='text/css', href='css/danganronpa_spinner.css')
     body
+        .bg-holder.anime
+            .holder-inner
+                img.rotate(src='img/danganronpa_spinner.png', alt='')
         #button
             span(style='padding-left:5px;') »
             #s_panel(style='background: rgba(255, 180, 0, 0.85);')
@@ -54,5 +58,3 @@ html
         script(src='js/fly3.js')
         input#w8-grey1.w8-button.grey(type='button', value='Ленточка', onclick='onoffanim()', name='w8-grey', style='margin: 5px;')
         input#w8-grey2.w8-button.grey(type='button', value='Fly', onclick='onoffanimFly3()', name='w8-grey', style='margin: 5px;')
-
-
