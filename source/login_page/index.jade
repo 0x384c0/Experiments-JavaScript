@@ -1,0 +1,27 @@
+doctype html
+html(lang='ru')
+  head
+    meta(charset='UTF-8')
+    meta(name='viewport', content='width=device-width, initial-scale=1')
+    title Login page
+    link(href='css/style.css', rel='stylesheet')
+  body
+    .wrapper
+      .animation
+        .animation__eye.animation__eye--one-one
+        .animation__eye.animation__eye--one-two
+        .animation__eye.animation__eye--two-one
+        .animation__eye.animation__eye--two-two
+        video.animation__video(width='384', height='374', loop='', muted='', autoplay='')
+          source(src='video/watchers.mp4', type='video/mp4')
+      form.form(action='')
+        fieldset.form__fieldset
+          label.form__field.form__field--login
+            span.form__label Email
+            input.form__input.form__input--login(type='text')
+          label.form__field.form__field--password
+            span.form__label Password
+            input.form__input.form__input--password(type='password')
+        a.form__button Log in
+    script(src='js/eyes.js')
+

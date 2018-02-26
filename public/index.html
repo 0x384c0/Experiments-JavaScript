@@ -1,59 +1,60 @@
 <!DOCTYPE html>
 <html>
-	<head>
-		<title> Gallery</title>
-		<meta charset="UTF-8">
-		<script src="js/gal.js"></script>
-		<script src="js/explanded_image/jquery_002.js"></script>
-		<script src="js/explanded_image/wakaba.js"></script>
-		<script src="js/explanded_image/loader.js"></script>
-		<link rel="stylesheet" type="text/css" href="css/style.css">
-		<link rel="stylesheet" type="text/css" href="css/Kaede_Akamatsu.css">
-		<link rel="stylesheet" type="text/css" href="css/danganronpa_spinner.css">
-	</head>
-	<body>
-		<div class="bg-holder anime">
-			<div class="holder-inner"><img src="img/danganronpa_spinner.png" alt="" class="rotate"></div>
-		</div>
-		<div id="button"><span style="padding-left:5px;">»</span>
-			<div id="s_panel" style="background: rgba(255, 180, 0, 0.85);">
-				<div style="padding-left:9px;" data-nb="1" class="octobird-block">
-					<input id="URLaddress" type="text" onchange="reloadImages()" onkeypress="reloadImages()" oninput="reloadImages()">
-					<select id="imageUrlMaskSelector" onchange="onSelectUrlMask()"></select><span style="color:green;">Image URL mask &lt;image_id&gt;</span><br>
-					<input id="imageID" type="number" onchange="reloadImages()" onkeypress="reloadImages()" oninput="reloadImages()"><span style="color:green;">Current Image ID</span><br>
-					<input id="PicOnPage" type="number" onchange="createImageViews()" onkeypress="createImageViews()" oninput="createImageViews()"><span style="color:green;">Images on page</span><br>
-					<input id="Step" type="number" onchange="reloadImages()" onkeypress="reloadImages()" oninput="reloadImages()"><span style="color:green;">Step</span><br>
-					<input id="user" type="text"><span style="color:green;">Image detail URL mask</span>
-				</div>
-			</div>
-		</div>
-		<center id="ImageList" style="line-height:0; /*убрать вертикальный отступы*/">no javaScript enabled
-			<!-- Поле для картинок-->
-		</center><br>
-		<center><img src="img/left_arrow.jpg" onclick="left_arrow()"><img src="img/right_arrow.jpg" onclick="right_arrow()">
-			<progress id="progress_bar" value="0" max="100" style="width:100%;"></progress>
-		</center>
-		<!-- <input type="text" value="move" id = "move" style="margin: 5px;" readonly/>-->
-		<script>document.onkeyup = key_detect;//Вкл нажатия клавиш</script>
-		<style>
-			.yise {
-			    width: 20px;
-			    height: 20px;
-			    background: #fdaaab;
-			    border-radius: 8px;
-			    border: 0px solid black;
-			    position: absolute;
-			    top: 0px;
-			    left: 0px;
-			    background: url('img/lenta-pattern.png');
-			}
-		</style>
-		<script src="js/lenta.js"></script>
-		<script src="js/fly3.js"></script>
-		<input id="w8-grey1" type="button" value="Ленточка" onclick="onoffanim()" name="w8-grey" style="margin: 5px;" class="w8-button grey">
-		<input id="w8-grey2" type="button" value="Fly" onclick="onoffanimFly3()" name="w8-grey" style="margin: 5px;" class="w8-button grey">
-		<div id="Kaede_Akamatsu_Button"><span>Show DR V3 animation</span>
-			<div id="Kaede_Akamatsu"><img src="img/Kaede_Akamatsu.png" height="719" width="250" alt=""></div>
-		</div>
-	</body>
+  <head>
+    <title> Gallery</title>
+    <meta charset="UTF-8">
+    <script src="js/gal.js"></script>
+    <script src="js/explanded_image/jquery_002.js"></script>
+    <script src="js/explanded_image/wakaba.js"></script>
+    <script src="js/explanded_image/loader.js"></script>
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" type="text/css" href="css/Kaede_Akamatsu.css">
+    <link rel="stylesheet" type="text/css" href="css/danganronpa_spinner.css">
+  </head>
+  <body>
+    <div class="bg-holder anime">
+      <div class="holder-inner"><img src="img/danganronpa_spinner.png" alt="" class="rotate"></div>
+    </div>
+    <div id="button"><span style="padding-left:5px;">»</span>
+      <div id="s_panel" style="background: rgba(255, 180, 0, 0.85);">
+        <div style="padding-left:9px;" data-nb="1" class="octobird-block">
+          <input id="URLaddress" type="text" onchange="reloadImages()" onkeypress="reloadImages()" oninput="reloadImages()">
+          <select id="imageUrlMaskSelector" onchange="onSelectUrlMask()"></select><span style="color:green;">Image URL mask &lt;image_id&gt;</span><br>
+          <input id="imageID" type="number" onchange="reloadImages()" onkeypress="reloadImages()" oninput="reloadImages()"><span style="color:green;">Current Image ID</span><br>
+          <input id="PicOnPage" type="number" onchange="createImageViews()" onkeypress="createImageViews()" oninput="createImageViews()"><span style="color:green;">Images on page</span><br>
+          <input id="Step" type="number" onchange="reloadImages()" onkeypress="reloadImages()" oninput="reloadImages()"><span style="color:green;">Step</span><br>
+          <input id="user" type="text"><span style="color:green;">Image detail URL mask</span>
+        </div>
+      </div>
+    </div>
+    <center id="ImageList" style="line-height:0; /*убрать вертикальный отступы*/">no javaScript enabled
+      <!-- Поле для картинок-->
+    </center><br>
+    <center><img src="img/left_arrow.jpg" onclick="left_arrow()"><img src="img/right_arrow.jpg" onclick="right_arrow()">
+      <progress id="progress_bar" value="0" max="100" style="width:100%;"></progress>
+    </center>
+    <!-- <input type="text" value="move" id = "move" style="margin: 5px;" readonly/>-->
+    <script>document.onkeyup = key_detect;//Вкл нажатия клавиш</script>
+    <style>
+      .yise {
+          width: 20px;
+          height: 20px;
+          background: #fdaaab;
+          border-radius: 8px;
+          border: 0px solid black;
+          position: absolute;
+          top: 0px;
+          left: 0px;
+          background: url('img/lenta-pattern.png');
+      }
+    </style>
+    <script src="js/lenta.js"></script>
+    <script src="js/fly3.js"></script>
+    <input id="w8-grey1" type="button" value="Ленточка" onclick="onoffanim()" name="w8-grey" style="margin: 5px;" class="w8-button grey">
+    <input id="w8-grey2" type="button" value="Fly" onclick="onoffanimFly3()" name="w8-grey" style="margin: 5px;" class="w8-button grey">
+    <div id="Kaede_Akamatsu_Button"><span>Show DR V3 animation</span>
+      <div id="Kaede_Akamatsu"><img src="img/Kaede_Akamatsu.png" height="719" width="250" alt=""></div>
+    </div>
+    <div id="Login_Page"><a href="login_page/index.html">Show Login Page</a></div>
+  </body>
 </html>
